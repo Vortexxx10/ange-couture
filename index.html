@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- bootstrap library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- google fonts -->
+    <!-- DM Sans font
+        Anton font
+     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans&display=swap" rel="stylesheet">
+    
+
+
+    <!-- js library -->
+    
+    <!-- panelSnap js -->
+    <script src="../../panelsnap.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new PanelSnap();
+        });
+    </script>
+
+    <script>
+        var defaultOptions = {
+          container: document.body.document.querySelector('.creative-production'),
+          panelSelector: '> div',
+          directionThreshold: 50,
+          delay: 0,
+          duration: 1000,
+          easing: function(t) { return t },
+        };
+      
+        new PanelSnap(options);
+      </script>
+
+
+    <title>Ange Couture</title>
+</head>
+<body>
+
+    <header>
+
+        <div id="blur-effet"></div>
+
+        <div class="entreprise-name">
+            <div id="logo"></div>
+            <h1 id="title">Ange Couture</h1>
+        </div>
+        <div class = "social-media media">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-whatsapp"></i>
+        </div>
+
+        <div id="text-header">
+            <p>Lorem Lorem, ipsum dolor sit amet consectetur adipisicing  ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div id="swipe-div">
+            <p>swipe</p>
+            <i class="bi bi-arrow-bar-down swipe"></i>
+        </div>
+
+    </header>
+    
+
+    <div class="creative-production">
+        <div data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="model">
+            <img src="/images/_.jpeg" id="pic1" alt="" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, consequuntur dolores itaque quae earum harum assumenda veritatis eligendi sit maxime nulla facere soluta sed quas.</p>
+        </div>
+
+        <div class="model">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, consequuntur dolores itaque quae earum harum assumenda veritatis eligendi sit maxime nulla facere soluta sed quas.</p>
+            <img id="pic2" src="/images/Classy Ankara Print Short Dress.jpeg" alt="" >
+
+        </div>
+
+        <div class="model">
+            <img id="pic3" src="/images/Here's Your Exclusive First Look At Beverly Naya's New Clothing Line - Be Naya _ BN Style.jpeg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, consequuntur dolores itaque quae earum harum assumenda veritatis eligendi sit maxime nulla facere soluta sed quas.</p>
+        </div>
+
+        <div class="model">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, consequuntur dolores itaque quae earum harum assumenda veritatis eligendi sit maxime nulla facere soluta sed quas.</p>
+            <img id="pic4" src="/images/Pin by tammy felicien on idée couture in 2022 _ Latest african fashion dresses, African fashion women, African print fashion dresses.jpeg" alt="">
+        </div>
+    </div>
+
+
+
+</body>
+</html>

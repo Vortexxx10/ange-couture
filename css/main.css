@@ -1,0 +1,293 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+    background-color: #d0d0d2;
+}
+
+header {
+
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    max-height: 1000px;
+    background: url(/images/african-woman-in-studio-white-wall-woman-in-blue-dress.jpg);
+    background-size: cover;
+    background-position:right;
+    background-repeat: repeat-x;
+    background-position-y: top ;
+    
+}
+
+#blur-effet{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.068);
+    backdrop-filter: blur(60px);
+    z-index: 0;
+}
+
+#title{
+    position: relative;
+    font-family: 'Anton', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    
+}
+
+.entreprise-name{
+    position: relative;
+    padding: 1.2% 20%;
+}
+
+.social-media{
+   position: absolute;
+   display: flex;
+   padding: 1.2% 2% 0% 0% ;
+   justify-content: space-between;
+   top: 2%;
+   right: 0;
+   float: right; 
+   width: 11%;
+}
+
+.social-media i{
+    font-size: x-large;
+}
+
+#text-header{
+    position: relative;
+    width: 40%;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: rgb(32, 31, 31);
+    margin-left: 10%;
+    margin-top: 10%;
+    
+}
+
+#swipe-div{
+    position: absolute;
+    bottom: 10vh;
+    font-size: large;
+    text-align: center;
+    left: 48%;
+    height: 5vh;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+} 
+
+#swipe-div p{
+    position: relative;
+    margin: 0%;
+}
+
+.swipe{
+    position: absolute;
+    animation: swipe 3s  infinite ease;
+    text-align: center;
+    top: 100%;
+}
+
+@keyframes swipe  {
+    0%,100% {
+        transform: translateY(0%)
+    }
+/* 
+    25%,75%{
+        transform: translateY(30%)
+    } */
+
+    50%{
+        transform: translateY(100%)
+    }
+
+}
+
+.creative-production{
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+    display: flexbox;
+    flex-direction: column;
+    border-radius: 0px;
+   
+}
+
+
+.model{
+    margin: auto ;
+    margin: auto;
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
+    width: 100%;
+    background: #d0d0d2;
+    box-shadow:  100px 100px 53px #8b8b8b27,
+             -100px -100px 53px #afafaf0c;
+
+}
+
+.model img{
+    position: relative;
+    max-width: 400px;
+    background: #d0d0d2;
+    box-shadow:  18px 18px 36px #b1b1b3,
+             -18px -18px 36px #b8b8b800;
+}
+
+.model p{
+    text-align: initial;
+    margin: 5%;
+    width: 100%;
+    min-width: 400px;
+    font-size: large;
+
+}
+ #pic1,
+ #pic3{
+    position: inherit;
+    margin-left:-15% ;
+
+}
+
+#pic2,
+#pic4{
+   position: inherit; 
+   margin-left:15% ;
+
+}
+
+
+
+@media screen and ( max-width: 900px) {
+ 
+
+
+
+header {
+
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    background: url(/images/african-woman-in-studio-white-wall-woman-in-blue-dress.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: repeat-x;
+    background-position-y: top ;
+
+    
+}
+
+#blur-effet{
+   display: none;
+}
+
+#title{
+    position: relative;
+    font-family: 'Anton', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    
+}
+
+.entreprise-name{
+    position: relative;
+    padding: 5% 25%;
+}
+
+.social-media{
+    display: none;
+}
+
+.social-media i{
+    font-size: x-large;
+}
+
+#text-header{
+    position: relative;
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(32, 31, 31);
+    margin: 25%;
+    text-align: center;
+    
+}
+
+#swipe-div{
+    position: absolute;
+    bottom: 10vh;
+    font-size: large;
+    text-align: center;
+    left: 48%;
+    height: 5vh;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+} 
+
+#swipe-div p{
+    position: relative;
+    margin: 0%;
+}
+
+
+.creative-production{
+    width: 100%;
+    backdrop-filter: blur(150px);
+    display: flexbox;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.model{
+    margin: 10% auto 0% auto;
+    width: 80vw;
+    box-shadow: none;
+}
+
+.model img{
+    position: relative;
+    width: 90%;
+    height: auto;
+}
+
+#pic1,
+#pic3,
+#pic2,
+#pic4{
+   margin-left:0;
+}
+
+
+.model p{
+    display: none ;
+}
+
+
+}
